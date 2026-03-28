@@ -17,7 +17,7 @@ npm run dev
 ## 4. View the Website
 Once the terminal shows "Ready" or "Started", open your browser and go to:
 - **Main Website**: [http://localhost:3000](http://localhost:3000)
-- **Admin Dashboard**: [http://localhost:3000/admin/dashboard](http://localhost:3000/admin/dashboard)
+- **Admin Dashboard**: [http://localhost:3000/admin/customerleads](http://localhost:3000/admin/customerleads)
 
 ---
 

@@ -18,7 +18,7 @@ sk-traders/
 ├── src/
 │   ├── app/                    # Next.js App Router routes
 │   │   ├── admin/              # Admin-specific routes
-│   │   │   ├── dashboard/      # Lead Management UI
+│   │   │   ├── customerleads/      # Lead Management UI
 │   │   │   └── login/          # Secure Admin Login
 │   │   ├── globals.css         # Brand colors and Global styles
 │   │   ├── layout.tsx          # Root layout with font configuration

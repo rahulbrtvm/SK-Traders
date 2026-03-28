@@ -38,7 +38,7 @@ To start the website locally for testing:
 
 ### Managing Leads
 - Customer inquiries go to your **Admin Dashboard**.
-- You can access it at `/admin/dashboard` using your Supabase credentials.
+- You can access it at `/admin/customerleads` using your Supabase credentials.
 - These records are stored in the `leads` table in your Supabase Dashboard.
 
 ---

@@ -27,7 +27,7 @@ export default function AdminLogin() {
             setError(loginError.message);
             setLoading(false);
         } else {
-            router.push('/admin/dashboard');
+            router.push('/admin/customerleads');
         }
     };
 
