@@ -1,5 +1,6 @@
 import Header from "@/components/sections/Header";
 import Hero from "@/components/sections/Hero";
+import Services from "@/components/sections/Services";
 import ProductGallery from "@/components/sections/ProductGallery";
 import SpecialOffers from "@/components/sections/SpecialOffers";
 import ContactForm from "@/components/sections/ContactForm";
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <Services />
         <ProductGallery />
         <SpecialOffers />
         <ContactForm />

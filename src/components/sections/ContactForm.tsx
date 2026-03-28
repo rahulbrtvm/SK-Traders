@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Send, Phone, MapPin, User, MessageSquare } from 'lucide-react';
+import { Send, Phone, MapPin, User, MessageSquare, Instagram, Facebook } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
 
 const ContactForm = () => {
@@ -73,6 +73,40 @@ const ContactForm = () => {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Social Media Links */}
+                        <div className="mt-12">
+                            <p className="text-sm font-bold text-secondary/40 uppercase tracking-widest mb-4">Follow Us</p>
+                            <div className="flex items-center gap-4">
+                                <a 
+                                    href="https://www.instagram.com/sk_trading_corporation?igsh=MWN2bmVlbzVsbXZ1Ng==" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-secondary/40 hover:text-[#E4405F] hover:border-[#E4405F]/30 hover:shadow-md border border-neutral-100 transition-all duration-300 transform hover:-translate-y-1"
+                                    title="Instagram"
+                                >
+                                    <Instagram size={22} />
+                                </a>
+                                <a 
+                                    href="https://www.facebook.com/share/1L5f23fKcA/" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-secondary/40 hover:text-[#1877F2] hover:border-[#1877F2]/30 hover:shadow-md border border-neutral-100 transition-all duration-300 transform hover:-translate-y-1"
+                                    title="Facebook"
+                                >
+                                    <Facebook size={22} />
+                                </a>
+                                <a 
+                                    href="https://maps.app.goo.gl/YD6vvuBnjn1XUNsR6" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-secondary/40 hover:text-primary hover:border-primary/30 hover:shadow-md border border-neutral-100 transition-all duration-300 transform hover:-translate-y-1"
+                                    title="Google Maps"
+                                >
+                                    <MapPin size={22} />
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl shadow-neutral-200 border border-neutral-100 relative">
@@ -103,7 +137,7 @@ const ContactForm = () => {
                                             id="name"
                                             type="text"
                                             placeholder="John Doe"
-                                            className="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
+                                            className="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-3 text-secondary focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
                                         />
                                     </div>
                                     <div className="space-y-2">
@@ -117,7 +151,7 @@ const ContactForm = () => {
                                             type="tel"
                                             data-testid="input-customer-phone"
                                             placeholder="7012311156"
-                                            className="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
+                                            className="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-3 text-secondary focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
                                         />
                                     </div>
                                 </div>
@@ -131,7 +165,7 @@ const ContactForm = () => {
                                         id="location"
                                         type="text"
                                         placeholder="e.g. Kazhakkoottam, Trivandrum"
-                                        className="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
+                                        className="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-3 text-secondary focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -143,7 +177,7 @@ const ContactForm = () => {
                                         id="message"
                                         rows={4}
                                         placeholder="Tell us about your requirements..."
-                                        className="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none"
+                                        className="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-3 text-secondary focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none"
                                     ></textarea>
                                 </div>
 
