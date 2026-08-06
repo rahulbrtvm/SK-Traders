@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Phone, MessageSquare, LayoutDashboard, Menu, X, ArrowRight } from 'lucide-react';
+import { Phone, Menu, X } from 'lucide-react';
 
 const navLinks = [
     { title: "Services", href: "#services" },
@@ -105,15 +105,6 @@ const Header = () => {
                     >
                         {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
                     </button>
-
-                    {/* Admin Icon (Legacy) */}
-                    <Link
-                        href="/admin/login"
-                        className="hidden md:flex p-2 text-white/50 hover:text-primary transition-colors border-l border-white/10 ml-2 pl-4"
-                        title="Admin Login"
-                    >
-                        <LayoutDashboard size={18} />
-                    </Link>
                 </div>
             </div>
 
@@ -178,16 +169,6 @@ const Header = () => {
                             <Phone size={24} fill="currentColor" />
                             <span className="text-xl font-black italic tracking-tight underline">Call: 70123 11156</span>
                         </Link>
-                        
-                        <div className="text-center pt-4">
-                            <Link
-                                href="/admin/login"
-                                className="flex items-center justify-center text-white/20 hover:text-primary transition-colors py-4 bg-white/5 rounded-xl border border-dashed border-white/10 px-8"
-                                onClick={() => setIsMobileMenuOpen(false)}
-                            >
-                                <LayoutDashboard size={20} />
-                            </Link>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -196,3 +177,4 @@ const Header = () => {
 };
 
 export default Header;
+
